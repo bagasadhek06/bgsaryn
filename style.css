@@ -688,7 +688,7 @@ footer {
 
 /* ── RESPONSIVE (HP) ─────────────────────────────────────────── */
 .hero-photo {
-  position: absolute;
+  position: relative;
   right: 4rem;
   top: 50%;
   transform: translateY(-50%);
