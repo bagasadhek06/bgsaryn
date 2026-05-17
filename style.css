@@ -714,3 +714,6 @@ footer {
   .scroll-indicator { left: 1.5rem; }
   footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
 }
+.hero-photo { right: 1.5rem; }
+  .hero-photo img { width: 140px; height: 140px; }
+}
