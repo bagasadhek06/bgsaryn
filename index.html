@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>baru</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bagas Adhek Aryanto — Portfolio</title>
+
+  <!-- Google Fonts (jangan diubah) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet"/>
+
+  <!-- File CSS tampilan -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+    NAV
+    Yang bisa diubah:
+    - "B.A"              → inisial kamu
+    - Tentang/Skill/dst  → nama menu
+    - Link Instagram/LinkedIn/GitHub → ganti URL-nya
+    - "lucfx31@gmail.com" → email atau nomor WA (format: https://wa.me/628xxx)
+  ============================================================ -->
+  <nav>
+    <div class="nav-logo">B<span>.</span>A</div>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#education">Pendidikan</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <div class="nav-socials">
+        <!-- Instagram -->
+        <a href="https://instagram.com/bgsaryn_" target="_blank" rel="noopener" class="nav-social-link" title="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/bagas-adhek-aryanto-97a477304/" target="_blank" rel="noopener" class="nav-social-link" title="LinkedIn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/bagasadhek06" target="_blank" rel="noopener" class="nav-social-link" title="GitHub">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <!-- YouTube: ganti # dengan link channel kamu -->
+        <a href="#" class="nav-social-link" title="YouTube">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+        </a>
+        <!-- TikTok: ganti # dengan link profil kamu -->
+        <a href="#" class="nav-social-link" title="TikTok">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        </a>
+      </div>
+      <!-- Tombol Open to Freelance → ganti href dengan email atau WA -->
+      <a href="mailto:lucfx31@gmail.com" class="nav-badge" style="text-decoration:none;">Open to Freelance ✉</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+    HERO
+    Yang bisa diubah:
+    - "Video Editor & Multimedia" → profesi/tagline kamu
+    - "My Portfolio"              → judul hero
+    - Teks deskripsi di bawah nama
+    - Teks tombol "Lihat Proyek" dan "Tentang Saya"
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Video Editor & Multimedia</div>
+      <h1 class="hero-name">
+        My<br>
+        <span class="accent-word">Portfolio</span>
+      </h1>
+      <p class="hero-desc">
+        Mahasiswa multimedia yang passionate di dunia video editing dan kreasi konten. Selalu penasaran, selalu belajar hal baru.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Lihat Proyek</a>
+        <a href="#about" class="btn-ghost">Tentang Saya</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    ABOUT
+    Yang bisa diubah:
+    - Teks paragraf bio (di dalam <p>...</p>)
+    - Angka statistik (2+, 6+, dst) dan labelnya
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="section-label">01 — Tentang Saya</div>
+    <h2 class="section-title reveal">Tentang Saya.</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Halo! Saya <strong>Bagas Adhek Aryanto</strong>, Video Editor asal <strong>Samarinda</strong> yang sesekali juga pegang kamera. Fokus utama saya adalah menghidupkan cerita lewat proses <strong>editing.</strong> Mulai dari cutting, menyelaraskan audio, sampai color grading, saya siap mengubah rekaman mentah kamu jadi konten visual yang estetik dan berenergi.
+        </p>
+        <p>
+          Video editing bukan sekadar menyusun klip — bagi saya, ini adalah proses memvisualisasikan pesan yang ingin disampaikan. Meski prosesnya menguras tenaga, kepuasan terbesar datang saat hasil editan benar-benar 'berbicara' dan meninggalkan kesan bagi yang menontonnya. Itulah yang terus mendorong saya untuk berkembang.
+        </p>
+        <p>
+          Saat ini saya <strong>terbuka untuk pekerjaan freelance</strong> dan siap membantu proyek-proyek yang membutuhkan sentuhan kreatif di bidang video editing dan multimedia.
+        </p>
+      </div>
+      <div class="about-stats reveal">
+        <!-- Ganti angka dan label sesuai pencapaian kamu -->
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Software Editing</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Tools Dikuasai</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Proyek Selesai</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3x</div>
+          <div class="stat-label">Lomba Diikuti</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    SKILLS
+    Yang bisa diubah:
+    - Nama tool (di dalam skill-name)
+    - Level: Basic / Intermediate / Advanced
+    - data-width="angka" → persentase skill bar (0-100)
+    - Emoji icon (di dalam skill-icon)
+  ============================================================ -->
+  <section id="skills">
+    <div class="section-label">02 — Keahlian</div>
+    <h2 class="section-title reveal">Tools yang<br>saya kuasai.</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎬</div>
+        <div class="skill-name">CapCut</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎞️</div>
+        <div class="skill-name">DaVinci Resolve</div>
+        <div class="skill-level">Basic</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="25"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎥</div>
+        <div class="skill-name">Adobe Premiere Pro</div>
+        <div class="skill-level">Basic</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="15"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">Canva</div>
+        <div class="skill-level">Basic</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📐</div>
+        <div class="skill-name">Figma</div>
+        <div class="skill-level">Basic</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="15"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📷</div>
+        <div class="skill-name">Lightroom</div>
+        <div class="skill-level">Basic</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    PROJECTS
+    Yang bisa diubah:
+    - Judul, deskripsi, dan tahun tiap kategori accordion
+    - Data proyek ada di file script.js (cari "EDIT DI SINI")
+  ============================================================ -->
+  <section class="projects" id="projects">
+    <div class="section-label">03 — Proyek</div>
+    <h2 class="section-title reveal">Karya yang<br>sudah dibuat.</h2>
+    <div class="accordion-list">
+
+      <div class="accordion-item reveal" id="acc-freelance">
+        <div class="accordion-header" onclick="toggleAccordion('freelance')">
+          <div class="accordion-icon">💼</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Freelance</div>
+            <div class="accordion-title">Klien Freelance</div>
+            <div class="accordion-desc">Hasil kerja nyata untuk klien — video promosi, konten sosial media, dan kebutuhan visual lainnya.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-freelance">
+          <div class="accordion-body-inner" id="inner-freelance"></div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal" id="acc-lomba">
+        <div class="accordion-header" onclick="toggleAccordion('lomba')">
+          <div class="accordion-icon">🏆</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Lomba Kreatif</div>
+            <div class="accordion-title">Kompetisi Video Kreatif</div>
+            <div class="accordion-desc">Mengikuti lomba video kreatif sebagai ajang mengasah skill editing dan storytelling.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">2025 - Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-lomba">
+          <div class="accordion-body-inner" id="inner-lomba"></div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal" id="acc-personal">
+        <div class="accordion-header" onclick="toggleAccordion('personal')">
+          <div class="accordion-icon">✨</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Proyek Pribadi & Kampus</div>
+            <div class="accordion-title">Personal & Academic Projects</div>
+            <div class="accordion-desc">Proyek mandiri dan tugas kampus.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">2025 - Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-personal">
+          <div class="accordion-body-inner" id="inner-personal"></div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal" id="acc-clipping">
+        <div class="accordion-header" onclick="toggleAccordion('clipping')">
+          <div class="accordion-icon">✂️</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Clipping</div>
+            <div class="accordion-title">Video Clipping</div>
+            <div class="accordion-desc">Memotong momen terbaik dari podcast, live stream, dan video panjang jadi short clip yang engaging.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">2026 - Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-clipping">
+          <div class="accordion-body-inner" id="inner-clipping"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+    EDUCATION
+    Yang bisa diubah:
+    - Tahun, nama sekolah/kampus, jurusan
+    - Tambah edu-item baru jika ada riwayat pendidikan lain
+  ============================================================ -->
+  <section id="education">
+    <div class="section-label">04 — Pendidikan</div>
+    <h2 class="section-title reveal">Latar belakang<br>pendidikan.</h2>
+    <div class="edu-timeline">
+      <div class="edu-item reveal">
+        <div class="edu-year">2025 — Sekarang</div>
+        <div class="edu-school">Politeknik Negeri Samarinda</div>
+        <div class="edu-major">D4 Teknik Informatika Multimedia · Jurusan Teknologi Informasi</div>
+        <div class="edu-badge">Semester 2 · Aktif</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year">21/22 - 23/24</div>
+        <div class="edu-school">SMK Bhakti Loa Janan</div>
+        <div class="edu-major">Teknik Alat Berat</div>
+        <div class="edu-badge">Alumni</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    FOOTER
+    Yang bisa diubah:
+    - Nama di footer
+    - Tahun copyright
+    - Link "freelance" → email atau WA
+  ============================================================ -->
+  <footer>
+    <div class="footer-name">bgsaryn_</div>
+    <div class="footer-copy">© 2025 · All rights reserved</div>
+    <div class="footer-tag">Open to <a href="mailto:lucfx31@gmail.com" style="color:var(--accent);text-decoration:none;">freelance</a> · Samarinda, ID</div>
+  </footer>
+
+  <!-- File JS interaksi -->
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
