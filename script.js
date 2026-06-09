@@ -101,8 +101,7 @@ const projectData = {
   // Tambahkan lomba yang pernah kamu ikuti di sini
   lomba: [
     { title: 'Di balik Transaksi', desc: 'Juara 1 Lomba Videografi dalam kegiatan  Creative Competition 2025 yang diselenggarakan FEBI UINSI.', thumb: 'https://i.ibb.co.com/BHqVH0HG/Screenshot-2026-05-16-110337.png', year: '2025', link: 'https://www.instagram.com/reel/DRQnfF0klgL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
-     { title: 'Campak Balik Lagi', desc: 'Dalam tahap penjurian.', thumb: 'https://i.ibb.co.com/gFgpQ2jb/Screenshot-2026-05-16-110601.png', year: '2026', link: 'https://www.instagram.com/reel/DXmQqSHgCcw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
-    { title: 'INFLASI Bukan Sekedar Angka', desc: 'Dalam tahap penjurian.', thumb: 'https://i.ibb.co.com/275n8Lq0/INFLASI.png', year: '2026', link: 'https://www.instagram.com/reel/DYRluq3AkJO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
+    { title: 'INFLASI Bukan Sekedar Angka', desc: 'Juara 1 Lomba Konten Video Literasi dalam kegiatan PENTAS AKSARA 2026 yang diselenggarakan oleh PusBI Kaltim.', thumb: 'https://i.ibb.co.com/275n8Lq0/INFLASI.png', year: '2026', link: 'https://www.instagram.com/reel/DYRluq3AkJO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
   ],
   
 
