@@ -517,6 +517,20 @@ section { padding: 7rem 4rem; }
   padding: 0.5rem 0;
 }
 
+/* Year grouping (dipakai di accordion section Desain Proyek Kelas) */
+.year-group { margin-bottom: 1.5rem; }
+.year-group:last-child { margin-bottom: 0; }
+.year-group-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed var(--border);
+}
+
 /* Project Thumbnail Grid */
 .project-grid {
   display: grid;
