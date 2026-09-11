@@ -31,6 +31,7 @@
       <li><a href="#about">Tentang</a></li>
       <li><a href="#skills">Skill</a></li>
       <li><a href="#projects">Proyek</a></li>
+      <li><a href="#class-design">Desain Kelas</a></li>
       <li><a href="#education">Pendidikan</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:0.75rem;">
@@ -132,7 +133,7 @@
           <div class="stat-label">Proyek Selesai</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">3x</div>
+          <div class="stat-num">2x</div>
           <div class="stat-label">Lomba Diikuti</div>
         </div>
       </div>
@@ -154,8 +155,8 @@
       <div class="skill-card reveal">
         <div class="skill-icon">🎬</div>
         <div class="skill-name">CapCut</div>
-        <div class="skill-level">Intermediate</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        <div class="skill-level">Pro</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon">🎞️</div>
@@ -172,8 +173,8 @@
       <div class="skill-card reveal">
         <div class="skill-icon">🎨</div>
         <div class="skill-name">Canva</div>
-        <div class="skill-level">Basic</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon">📐</div>
@@ -184,8 +185,8 @@
       <div class="skill-card reveal">
         <div class="skill-icon">📷</div>
         <div class="skill-name">Lightroom</div>
-        <div class="skill-level">Basic</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
       </div>
     </div>
   </section>
@@ -197,9 +198,9 @@
     - Data proyek ada di file script.js (cari "EDIT DI SINI")
   ============================================================ -->
   <section class="projects" id="projects">
-    <div class="section-label">03 — Proyek</div>
+    <div class="section-label">03 — Project Video</div>
     <h2 class="section-title reveal">Karya yang<br>sudah dibuat.</h2>
-    <div class="accordion-list">
+    <div class="accordion-list" id="project-accordion-list">
 
       <div class="accordion-item reveal" id="acc-freelance">
         <div class="accordion-header" onclick="toggleAccordion('freelance')">
@@ -243,7 +244,7 @@
           <div class="accordion-header-text">
             <div class="accordion-tag">Proyek Pribadi & Kampus</div>
             <div class="accordion-title">Personal & Academic Projects</div>
-            <div class="accordion-desc">Proyek mandiri dan tugas kampus.</div>
+            <div class="accordion-desc">Proyek mandiri dan tugas kampus untuk improvisasi skill saya.</div>
           </div>
           <div class="accordion-meta">
             <div class="accordion-year">2025 - Now</div>
@@ -277,20 +278,100 @@
   </section>
 
   <!-- ============================================================
+    CLASS PROJECT DESIGN
+    Section ini untuk karya DESAIN STATIS dari tugas kuliah
+    (poster, mockup UI/UX, infografis, dll) — beda dari section
+    "Proyek" di atas yang isinya video.
+
+    Yang bisa diubah:
+    - Judul & deskripsi tiap kartu (project-thumb-title / desc)
+    - "thumb" → ganti project-thumb-placeholder dengan
+      <img class="project-thumb-img" src="URL_FOTO" alt="...">
+    - href="#" → ganti dengan link Behance/Drive/Instagram desainnya
+    - Salin 1 blok <a class="project-thumb-card"> untuk nambah kartu
+
+    CATATAN: kalau isi section ini nanti ternyata sama dengan
+    kategori "Proyek Pribadi & Kampus" di section Proyek (cek
+    script.js), pertimbangkan gabung jadi satu supaya nggak
+    duplikat kategori di mata pengunjung.
+  ============================================================ -->
+  <section id="class-design">
+    <div class="section-label">04 — Project Graphic Design</div>
+    <h2 class="section-title reveal">Desain untuk<br>tugas kuliah.</h2>
+    <div class="accordion-list" id="design-accordion-list">
+
+      <div class="accordion-item reveal" id="acc-design-freelance">
+        <div class="accordion-header" onclick="toggleDesignAccordion('freelance')">
+          <div class="accordion-icon">💼</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Freelance</div>
+            <div class="accordion-title">Klien Freelance</div>
+            <div class="accordion-desc">Poster, banner, atau materi visual lain yang dikerjakan untuk klien.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-design-freelance">
+          <div class="accordion-body-inner" id="inner-design-freelance"></div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal" id="acc-design-lomba">
+        <div class="accordion-header" onclick="toggleDesignAccordion('lomba')">
+          <div class="accordion-icon">🏆</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Lomba Kreatif</div>
+            <div class="accordion-title">Kompetisi Desain Kreatif</div>
+            <div class="accordion-desc">Karya desain yang diikutsertakan dalam lomba/kompetisi.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">2025 - Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-design-lomba">
+          <div class="accordion-body-inner" id="inner-design-lomba"></div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal" id="acc-design-personal">
+        <div class="accordion-header" onclick="toggleDesignAccordion('personal')">
+          <div class="accordion-icon">✨</div>
+          <div class="accordion-header-text">
+            <div class="accordion-tag">Project Pribadi & Kampus</div>
+            <div class="accordion-title">Personal & Academic Projects</div>
+            <div class="accordion-desc">Proyek mandiri dan tugas kampus untuk improvisasi skill saya.</div>
+          </div>
+          <div class="accordion-meta">
+            <div class="accordion-year">2025 - Now</div>
+            <div class="accordion-chevron">▾</div>
+          </div>
+        </div>
+        <div class="accordion-body" id="body-design-personal">
+          <div class="accordion-body-inner" id="inner-design-personal"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
     EDUCATION
     Yang bisa diubah:
     - Tahun, nama sekolah/kampus, jurusan
     - Tambah edu-item baru jika ada riwayat pendidikan lain
   ============================================================ -->
   <section id="education">
-    <div class="section-label">04 — Pendidikan</div>
+    <div class="section-label">05 — Pendidikan</div>
     <h2 class="section-title reveal">Latar belakang<br>pendidikan.</h2>
     <div class="edu-timeline">
       <div class="edu-item reveal">
         <div class="edu-year">2025 — Sekarang</div>
         <div class="edu-school">Politeknik Negeri Samarinda</div>
         <div class="edu-major">D4 Teknik Informatika Multimedia · Jurusan Teknologi Informasi</div>
-        <div class="edu-badge">Semester 2 · Aktif</div>
+        <div class="edu-badge">Semester 3 · Aktif</div>
       </div>
       <div class="edu-item reveal">
         <div class="edu-year">21/22 - 23/24</div>
@@ -310,8 +391,8 @@
   ============================================================ -->
   <footer>
     <div class="footer-name">bgsaryn_</div>
-    <div class="footer-copy">© 2025 · All rights reserved</div>
-    <div class="footer-tag">Open to <a href="mailto:lucfx31@gmail.com" style="color:var(--accent);text-decoration:none;">freelance</a> · Samarinda, ID</div>
+    <div class="footer-copy">© 2026 · All rights reserved</div>
+    <div class="footer-tag">Open to <a href="mailto:hillucbussiness@gmail.com" style="color:var(--accent);text-decoration:none;">freelance</a> · Samarinda, ID</div>
   </footer>
 
   <!-- File JS interaksi -->
