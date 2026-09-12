@@ -304,3 +304,12 @@ function toggleAccordion(key) {
     body.style.maxHeight = inner.scrollHeight + 40 + 'px';
   }
 }
+
+
+// ── Buka semua link eksternal di tab baru (jangan diubah) ───
+document.querySelectorAll('a').forEach(link => {
+  if (link.hostname && link.hostname !== window.location.hostname) {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+  }
+});
