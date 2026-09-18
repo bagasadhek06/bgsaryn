@@ -268,6 +268,19 @@ function renderDesignAccordions() {
 renderDesignAccordions();
 
 
+// ── Hitung otomatis total proyek (video + design) untuk stat "Proyek Selesai" ──
+// Angka ini sekarang dihitung langsung dari isi projectData + designData,
+// jadi kalau kamu nambah/hapus proyek di atas, angka di section "Tentang Saya"
+// otomatis ikut update — nggak perlu diedit manual lagi.
+function updateTotalProjectsStat() {
+  const totalVideo = Object.values(projectData).reduce((sum, arr) => sum + arr.length, 0);
+  const totalDesign = Object.values(designData).reduce((sum, arr) => sum + arr.length, 0);
+  const el = document.getElementById('stat-total-projects');
+  if (el) el.textContent = totalVideo + totalDesign;
+}
+updateTotalProjectsStat();
+
+
 // ── Toggle Accordion khusus section Desain (jangan diubah) ──
 // Dipisah dari toggleAccordion() di section Proyek supaya buka/tutup
 // di satu section tidak menutup accordion yang terbuka di section lain.
