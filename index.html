@@ -67,8 +67,8 @@
     Yang bisa diubah:
     - "Video Editor & Multimedia" → profesi/tagline kamu
     - "My Portfolio"              → judul hero
-    - Teks deskripsi di bawah nama
-    - Teks tombol "Lihat Proyek" dan "Tentang Saya"
+    - Teks deskripsi di bawah foto
+    - Dua kotak proyek: thumb, badge (label), title, href
   ============================================================ -->
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
@@ -79,16 +79,38 @@
         My<br>
         <span class="accent-word">Portfolio</span>
       </h1>
+
+      <div class="hero-photo">
+        <img src="https://i.ibb.co/KjYrGTQL/DSC06098-jpg.jpg" alt="Bagas Adhek Aryanto">
+      </div>
+
       <p class="hero-desc">
         Mahasiswa multimedia yang passionate di dunia video editing dan kreasi konten. Selalu penasaran, selalu belajar hal baru.
       </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">Lihat Proyek</a>
-        <a href="#about" class="btn-ghost">Tentang Saya</a>
+
+      <div class="hero-project-links">
+        <a class="hero-project-tile" href="#projects">
+          <div class="hero-project-media">
+            <img src="https://i.ibb.co.com/BHqVH0HG/Screenshot-2026-05-16-110337.png" alt="" class="hero-project-thumb">
+            <span class="hero-project-play">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+          <div class="hero-project-text">
+            <span class="hero-project-badge">🏆 2x Juara 1</span>
+            <span class="hero-project-title">Lihat Proyek Video</span>
+          </div>
+        </a>
+        <a class="hero-project-tile" href="#class-design">
+          <div class="hero-project-media">
+            <img src="https://i.ibb.co.com/N2wXwn95/GFX-Cosplay.jpg" alt="" class="hero-project-thumb">
+          </div>
+          <div class="hero-project-text">
+            <span class="hero-project-badge">🎨 16+ Karya</span>
+            <span class="hero-project-title">Lihat Proyek Design</span>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="hero-photo">
-      <img src="https://i.ibb.co/KjYrGTQL/DSC06098-jpg.jpg" alt="Bagas Adhek Aryanto">
     </div>
 
     <div class="scroll-indicator">
@@ -129,12 +151,12 @@
           <div class="stat-label">Tools Dikuasai</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">28</div>
+          <div class="stat-num" id="stat-total-projects">28</div>
           <div class="stat-label">Proyek Selesai</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">2x</div>
-          <div class="stat-label">Lomba Diikuti</div>
+          <div class="stat-label">Juara 1 Lomba</div>
         </div>
       </div>
     </div>
