@@ -102,6 +102,7 @@ const projectData = {
   lomba: [
     { title: 'Di balik Transaksi', desc: 'Juara 1 Lomba Videografi dalam kegiatan  Creative Competition 2025 yang diselenggarakan FEBI UINSI.', thumb: 'https://i.ibb.co.com/BHqVH0HG/Screenshot-2026-05-16-110337.png', year: '2025', link: 'https://www.instagram.com/reel/DRQnfF0klgL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
     { title: 'INFLASI Bukan Sekedar Angka', desc: 'Juara 1 Lomba Konten Video Literasi dalam kegiatan PENTAS AKSARA 2026 yang diselenggarakan oleh PusBI Kaltim.', thumb: 'https://i.ibb.co.com/275n8Lq0/INFLASI.png', year: '2026', link: 'https://www.instagram.com/reel/DYRluq3AkJO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
+    { title: 'CFD', desc: 'Juara Storytellong Lomba Konten CFD.', thumb: 'https://i.ibb.co.com/93q6YZm2/Screenshot-2026-10-17-174048.png', year: '2026', link: 'https://www.instagram.com/reel/DeJVWxjBBGW/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==' },
   ],
   
 
@@ -204,7 +205,7 @@ const designData = {
     { title: 'Poster perkenalan TIM B (kloter 5)', desc: 'Poster pengenalan jejeran mahasiswa TIMB angkatan 25 yang berisi beberapa mahasiswa.', thumb: 'https://i.ibb.co.com/5gJhmGPh/8.png', year: '2026', link: 'https://www.instagram.com/p/DdIbgDjki92/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==' },
     { title: 'Poster perkenalan TIM B (kloter 6)' , desc: 'Poster pengenalan jejeran mahasiswa TIMB angkatan 25 yang berisi beberapa mahasiswa.', thumb: 'https://i.ibb.co.com/SwtYnzkK/5.png', year: '2026', link: 'https://www.instagram.com/p/DdIbbOgEgxu/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==' },
     { title: 'Poster perkenalan TIM B (kloter 7)', desc: 'Poster pengenalan jejeran mahasiswa TIMB angkatan 25 yang berisi beberapa mahasiswa.', thumb: 'https://i.ibb.co.com/MynH0pmZ/6.png', year: '2026', link: 'https://www.instagram.com/p/DdIbTyWkpTz/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==' },
-    { title: 'Poster perkenalan TIM B (kloter 8)', desc: 'Poster pengenalan jejeran mahasiswa TIMB angkatan 25 yang berisi beberapa mahasiswa.', thumb: 'https://i.ibb.co.com/DfnhDG7M/7.png', year: '2026', link: 'https://www.instagram.com/p/DdIbTyWkpTz/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==' },
+    { title: 'Poster perkenalan TIM B (kloter 8)', desc: 'Poster pengenalan jejeran mahasiswa TIMB angkatan 25 yang berisi beberapa mahasiswa.', thumb: 'https://i.ibb.co.com/DfnhDG7M/7.png', year: '2026', link: 'https://www.instagram.com/p/DdIbTyWkpTz/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==' }
   ]
 
 };
